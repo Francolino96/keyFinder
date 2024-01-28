@@ -119,7 +119,7 @@ def search_key_in_xls(response_path, xls_filepath, key):
 # Funzione di ricerca chiave per files di tipo .xlsx
 def search_key_in_xlsx(response_path, xlsx_filepath, key):
     try:
-        workbook = openpyxl.load_workbook(xlsx_filepath)
+        workbook = openpyxl.load_workbook(xlsx_filepath, data_only=True)
         for sheet_name in workbook.sheetnames:
             sheet = workbook[sheet_name]
             for row in sheet.iter_rows():
