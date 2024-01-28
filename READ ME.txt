@@ -1,0 +1,23 @@
+Tutti i requirements sono contenuti nel file requirements.txt.
+Per installare utilizzare da prompt il comando pip install -r -requirements.txt.
+
+Per il corretto funzionamento del programma è necessaria la presenza di una lista 
+di chiavi in formato .csv all'interno della directory principale del progetto.
+La denominazione di tale file è indifferente.
+In caso di presenza di più di un file .csv in tale cartella verrà preso il primo 
+in ordine alfabetico.
+
+Il programma analizzerà solamente i file presenti nelle cartelle e nelle 
+sottocartelle presenti nella directory immediatamente esterna a quella del progetto.
+La denominazione e il numero di tali cartelle è indifferente.
+
+Le uniche estensioni accettate dal programma sono: 
+.xls, .xlsx, .txt, .csv, .docx, .pdf, .html, .htm
+Tuttavia la presenza di files con altre estensioni non impedisce il funzionamento del 
+programma, semplicemente tali files verranno ignorati.
+
+Per runnare il programma da linea di comando posizionarsi all'interno della cartella
+entro la quale è presente il file program.py tramite il comando 'cd C:\path_assoluto'
+e, dopo aver installato tutti python e tutti i requiments richiesti, lanciare il programma
+con il comando python program.py
+
